@@ -18,6 +18,6 @@ public class HelloWorldController {
 	
     @RequestMapping("/version")
     public String version() {
-        return "version v0.5\n";
+        return "version v0.6\n";
     }
 }
