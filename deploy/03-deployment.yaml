@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-helloworld
-        image: 'harbor.wang.org/example/spring-boot-helloworld:v0.9.0'
+        image: 'harbor.wang.org/example/spring-boot-helloworld:__TAG__'
         ports:
         - name: http
           containerPort: 80
