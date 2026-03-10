@@ -17,6 +17,7 @@ spec:
         - name: spring-boot-helloworld
           #image: harbor.wang.org/example/spring-boot-helloworld:2
           image: __IMAGE__
+          imagePullPolicy: Always
           resources:
             limits:
               memory: "500Mi"
