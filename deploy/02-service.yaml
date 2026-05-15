@@ -12,7 +12,7 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: http
+      targetPort: 8888
       nodePort: 30666
   selector:
     app: spring-boot-helloworld
