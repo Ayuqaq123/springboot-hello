@@ -2,7 +2,7 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: test
+  name: sg
 ---
 ---
 kind: Service
@@ -44,7 +44,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-helloworld
-        image: '${my_image}'
+        image: 'artifact.nc.rdcloud.4c.hq.cmcc:80/csq-docker/spring-boot-helloworld:main-ad249f3a1d1e0aa958299a5190c2ba72dbd6bedf'
         ports:
         - name: http
           containerPort: 80
