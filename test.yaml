@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-helloworld
-        image: 'artifact.nc.rdcloud.4c.hq.cmcc:80/csq-docker/spring-boot-helloworld:main-ad249f3a1d1e0aa958299a5190c2ba72dbd6bedf'
+        image: '${my_image}'
         ports:
         - name: http
           containerPort: 8080
