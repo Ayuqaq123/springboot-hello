@@ -1,10 +1,4 @@
 ---
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: sg
----
----
 kind: Service
 apiVersion: v1
 metadata:
