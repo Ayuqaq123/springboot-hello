@@ -3,7 +3,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: spring-boot-helloworld
-  namespace: test
+  namespace: sg
   labels:
     app: spring-boot-helloworld
 spec:
@@ -12,7 +12,7 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 8080
   selector:
     app: spring-boot-helloworld
 ---
@@ -20,7 +20,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: spring-boot-helloworld
-  namespace: test
+  namespace: sg
   labels:
     app: spring-boot-helloworld
 spec:
@@ -38,5 +38,5 @@ spec:
         image: 'artifact.nc.rdcloud.4c.hq.cmcc:80/csq-docker/spring-boot-helloworld:main-ad249f3a1d1e0aa958299a5190c2ba72dbd6bedf'
         ports:
         - name: http
-          containerPort: 80
+          containerPort: 8080
           protocol: TCP
