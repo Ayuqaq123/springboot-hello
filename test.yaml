@@ -3,7 +3,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: spring-boot-helloworld
-  namespace: sg
   labels:
     app: spring-boot-helloworld
 spec:
@@ -20,7 +19,6 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: spring-boot-helloworld
-  namespace: sg
   labels:
     app: spring-boot-helloworld
 spec:
